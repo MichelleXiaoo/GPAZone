@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
 
@@ -26,74 +26,43 @@
           class="top-logo"
         />
       </div>
-      <nav class="navbar-right">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How to Calculate</a></li>
-          <li><a href="#">Terms of Service</a></li>
-        </ul>
-      </nav>
+      <ul class="navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">How to Calculate</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <div class="hamburger-icon">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
 
     <main class="main">
       <section>
         <h1>GPA Calculator</h1>
-        <p>This is a GPA (Grade Point Average) calculator.</p>
-        <p>
-          To calculate your GPA, enter the Credits and select the Grade for each
-          course.
+        <p class="gpa-intro">
+          This GPA (Grade Point Average) calculator is suitable for all American
+          university students.
+          <br />
+          Just input the course name, credits and grade, and the system will
+          generate your GPA immediately.
         </p>
         <!-- <div class="buttons">
           <button class="sort-ascending">Sort as ascending</button>
-          <button class="sort-descending">Sort as descending</button>
+          <button class="sort-descending">Sort adescending</button>
         </div> -->
       </section>
 
       <section class="input-parts">
-        <form action="">
-          <div>
-            <label for="course name">Course (optional)</label>
-            <label for="">Credits*</label>
-            <label for="">Grade*</label>
-          </div>
+        <form class="form">
+          <!-- <div>
+            <ul class="form-title">
+              <li>Course (Optional)</li>
+              <li>Credits*</li>
+              <li>Grade*</li>
+            </ul>
+          </div> -->
 
-          <div>
-            <input
-              type="text"
-              id="course-name"
-              placeholder="Course Name"
-              class="course-type"
-              list="options"
-            />
-            <input
-              type="number"
-              placeholder="Credits"
-              min="0"
-              max="6"
-              class="course-credit"
-            />
-            <select name="select" class="select" placeholder="Grade">
-              <option value=""></option>
-              <option value="A">A</option>
-              <option value="A-">A-</option>
-              <option value="B+">B+</option>
-              <option value="B">B</option>
-              <option value="B-">B-</option>
-              <option value="C+">C+</option>
-              <option value="C">C</option>
-              <option value="C-">C-</option>
-              <option value="D+">D+</option>
-              <option value="D">D</option>
-              <option value="D-">D-</option>
-              <option value="F">F</option>
-            </select>
-            <button type="button" class="trash-button">
-              <i class="fa fa-trash-o" style="font-size: 16px"></i>
-            </button>
-            <!-- <img src="./images/trash-can.png" alt="" class="trash-can" /> -->
-          </div>
-
-          <div>
+          <div class="grader">
             <input
               type="text"
               id="course-name"
@@ -124,11 +93,11 @@
               <option value="F">F</option>
             </select>
             <button type="button" class="trash-button">
-              <i class="fa fa-trash-o" style="font-size: 16px"></i>
+              <i class="fas fa-trash-alt"></i>
             </button>
           </div>
 
-          <div>
+          <div class="grader">
             <input
               type="text"
               id="course-name"
@@ -159,26 +128,96 @@
               <option value="F">F</option>
             </select>
             <button type="button" class="trash-button">
-              <i class="fa fa-trash-o" style="font-size: 16px"></i>
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+
+          <div class="grader">
+            <input
+              type="text"
+              id="course-name"
+              placeholder="Course Name"
+              class="course-type"
+              list="options"
+            />
+            <input
+              type="number"
+              placeholder="Credits"
+              min="0"
+              max="6"
+              class="course-credit"
+            />
+            <select name="select" class="select">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+              <option value="F">F</option>
+            </select>
+            <button type="button" class="trash-button">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+
+          <div class="grader">
+            <input
+              type="text"
+              id="course-name"
+              placeholder="Course Name"
+              class="course-type"
+              list="options"
+            />
+            <input
+              type="number"
+              placeholder="Credits"
+              min="0"
+              max="6"
+              class="course-credit"
+            />
+            <select name="select" class="select">
+              <option value=""></option>
+              <option value="A">A</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="B-">B-</option>
+              <option value="C+">C+</option>
+              <option value="C">C</option>
+              <option value="C-">C-</option>
+              <option value="D+">D+</option>
+              <option value="D">D</option>
+              <option value="D-">D-</option>
+              <option value="F">F</option>
+            </select>
+            <button type="button" class="trash-button">
+              <i class="fas fa-trash-alt"></i>
             </button>
           </div>
         </form>
       </section>
 
       <section>
-        <div>
-          <img src="./images/plus.png" alt="" class="plus-sign" />
-          <!-- <i class="fas fa-plus-square" style="font-size: 16px"></i> -->
+        <div class="plus-icon">
+          <!-- <img src="./images/plus.png" alt="" class="plus-sign" /> -->
+          <i class="fas fa-plus"></i>
         </div>
 
-        <div class="result">
-          <p id="gpa-text">Your GPA is</p>
-          <input type="number" />
-          <h2 id="gpa-result">0.00</h2>
+        <div id="result">
+          <p class="gpa-text">Your GPA is</p>
+          <!-- <input type="number" id="gpa-result" /> -->
+          <h2 class="gpa-result">0.00</h2>
         </div>
 
         <div>
-          <button class="btn-reset">Reset</button>
+          <button id="btn-reset">Reset</button>
         </div>
       </section>
     </main>
@@ -190,7 +229,7 @@
           <li>Feedback</li>
         </ul>
       </div>
-      <p>&#169; GPA-Zone All Rights Reserved</p>
+      <p>&#169; GPA-Zone All Rights Reserved - by Michelle</p>
     </footer>
 
     <datalist id="options">
