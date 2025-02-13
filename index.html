@@ -18,6 +18,7 @@
   </head>
 
   <body>
+    <!-- Below is the Navigation Bar -->
     <header class="navbar">
       <div class="navbar-left">
         <img
@@ -36,6 +37,7 @@
       </div>
     </header>
 
+    <!-- Below is the Main Part -->
     <main class="main">
       <section>
         <h1>GPA Calculator</h1>
@@ -46,28 +48,16 @@
           Just input the course name, credits and grade, and the system will
           generate your GPA immediately.
         </p>
-        <!-- <div class="buttons">
-          <button class="sort-ascending">Sort as ascending</button>
-          <button class="sort-descending">Sort adescending</button>
-        </div> -->
       </section>
 
+      <!-- Below is the Form -->
       <section class="input-parts">
         <form class="form">
-          <!-- <div>
-            <ul class="form-title">
-              <li>Course (Optional)</li>
-              <li>Credits*</li>
-              <li>Grade*</li>
-            </ul>
-          </div> -->
-
-          <div class="grader">
+          <div class="form-row">
             <input
               type="text"
-              id="course-name"
               placeholder="Course Name"
-              class="course-type"
+              class="course-name"
               list="options"
             />
             <input
@@ -77,7 +67,7 @@
               max="6"
               class="course-credit"
             />
-            <select name="select" class="select">
+            <select name="select" class="course-grade">
               <option value=""></option>
               <option value="A">A</option>
               <option value="A-">A-</option>
@@ -97,12 +87,11 @@
             </button>
           </div>
 
-          <div class="grader">
+          <div class="form-row">
             <input
               type="text"
-              id="course-name"
               placeholder="Course Name"
-              class="course-type"
+              class="course-name"
               list="options"
             />
             <input
@@ -112,7 +101,7 @@
               max="6"
               class="course-credit"
             />
-            <select name="select" class="select">
+            <select name="select" class="course-grade">
               <option value=""></option>
               <option value="A">A</option>
               <option value="A-">A-</option>
@@ -132,12 +121,11 @@
             </button>
           </div>
 
-          <div class="grader">
+          <div class="form-row">
             <input
               type="text"
-              id="course-name"
               placeholder="Course Name"
-              class="course-type"
+              class="course-name"
               list="options"
             />
             <input
@@ -147,7 +135,7 @@
               max="6"
               class="course-credit"
             />
-            <select name="select" class="select">
+            <select name="select" class="course-grade">
               <option value=""></option>
               <option value="A">A</option>
               <option value="A-">A-</option>
@@ -167,12 +155,11 @@
             </button>
           </div>
 
-          <div class="grader">
+          <div class="form-row">
             <input
               type="text"
-              id="course-name"
               placeholder="Course Name"
-              class="course-type"
+              class="course-name"
               list="options"
             />
             <input
@@ -182,7 +169,7 @@
               max="6"
               class="course-credit"
             />
-            <select name="select" class="select">
+            <select name="select" class="course-grade">
               <option value=""></option>
               <option value="A">A</option>
               <option value="A-">A-</option>
@@ -204,24 +191,26 @@
         </form>
       </section>
 
+      <!-- Below is the Plus Icon: once clicked, there will be a new form row added to the bottom. -->
       <section>
         <div class="plus-icon">
-          <!-- <img src="./images/plus.png" alt="" class="plus-sign" /> -->
           <i class="fas fa-plus"></i>
         </div>
 
+        <!-- Below is the GPA Result part-->
         <div id="result">
           <p class="gpa-text">Your GPA is</p>
-          <!-- <input type="number" id="gpa-result" /> -->
-          <h2 class="gpa-result">0.00</h2>
+          <h2 id="gpa-result">0.00</h2>
         </div>
 
+        <!-- Below is the Reset Button: once clicked, the whole form will be cleared and there will be 4 empty rows for new data. -->
         <div>
           <button id="btn-reset">Reset</button>
         </div>
       </section>
     </main>
 
+    <!-- Below is the footer of the whole page -->
     <footer class="footer">
       <div>
         <ul>
@@ -232,6 +221,7 @@
       <p>&#169; GPA-Zone All Rights Reserved - by Michelle</p>
     </footer>
 
+    <!-- Below is the whole list of the Course Name for the user to choose from -->
     <datalist id="options">
       <option value="ACCT">Accounting</option>
       <option value="ASL">American Sign Language</option>

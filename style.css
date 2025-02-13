@@ -10,6 +10,7 @@ body {
   font-size: 1em;
 }
 
+/* Below is the style of the navigation bar */
 .top-logo {
   width: 10vw;
   min-width: 120px;
@@ -51,6 +52,7 @@ body {
   padding-left: 0.6rem;
 }
 
+/* Below is the style of the Hamburger Icon */
 .hamburger-icon {
   display: none;
   font-size: 1.5rem;
@@ -86,6 +88,12 @@ body {
   }
 }
 
+/* Below is the style of the main form part */
+main {
+  text-align: center;
+  padding: 0 1rem 1rem 1rem;
+}
+
 h1 {
   font-size: 2.4rem;
   padding: 1.1rem 0;
@@ -96,21 +104,6 @@ h1 {
   padding-bottom: 1.2rem;
 }
 
-/* .form-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  margin: 0 0.5rem 0.3rem 0.5rem;
-  list-style: none;
-  font-weight: bolder;
-}
-
-.form-title li {
-  text-decoration: none;
-  padding: 10px 40px;
-} */
-
 input,
 select {
   font-size: 0.9rem;
@@ -120,19 +113,34 @@ select {
   border-radius: 0.25rem;
 }
 
-.course-type {
+.course-name {
   width: 15%;
 }
 
 .course-credit,
 select {
-  width: 10%;
+  width: 15%;
 }
 
 .trash-button {
   font-size: 1rem;
   margin: 0.8rem;
   cursor: pointer;
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.scale-down {
+  animation: scaleDown 0.5s ease forwards;
 }
 
 .plus-icon {
@@ -148,11 +156,7 @@ select {
   text-align: center;
 }
 
-main {
-  text-align: center;
-  padding: 0 1rem 1rem 1rem;
-}
-
+/* Below is the style of the GPA result */
 #result {
   width: 9rem;
   height: 9rem;
@@ -168,11 +172,12 @@ main {
   font-size: 1.15rem;
 }
 
-.gpa-result {
+#gpa-result {
   font-size: 3rem;
   font-weight: bold;
 }
 
+/* Below is Reset Button */
 #btn-reset {
   margin-top: 1.15rem;
   font-size: 1.15rem;
@@ -184,6 +189,7 @@ main {
   border-radius: 0.2rem;
 }
 
+/* Below is the style of the footer */
 .footer {
   background-color: black;
   color: white;
